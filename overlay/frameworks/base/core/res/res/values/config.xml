@@ -334,7 +334,7 @@
          Choices are: FULL, NORMAL, OFF. -->
     <string name="db_default_sync_mode">OFF</string>
 
-    <!-- The database synchronization mode when using Write-Ahead Logging.
+ <!-- The database synchronization mode when using Write-Ahead Logging.
          From https://www.sqlite.org/pragma.html#pragma_synchronous:
          WAL mode is safe from corruption with synchronous=NORMAL, and probably DELETE mode is safe
          too on modern filesystems. WAL mode is always consistent with synchronous=NORMAL, but WAL
@@ -345,4 +345,15 @@
          running in WAL mode.
          Choices are: FULL, NORMAL, OFF. -->
     <string name="db_wal_sync_mode">OFF</string>
+
+   <!-- Maximum number of supported users -->
+    <integer name="config_multiuserMaximumUsers">5</integer>
+
+    <!-- If this is true, the screen will fade off. -->
+    <bool name="config_animateScreenLights">false</bool>
+
+    <!-- Amount of time in ms the user needs to press the relevant keys to trigger the
+         screenshot chord -->
+    <integer name="config_screenshotChordKeyTimeout">0</integer>
+
 </resources>
