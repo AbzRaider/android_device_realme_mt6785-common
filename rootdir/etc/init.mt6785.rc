@@ -28,8 +28,8 @@ on property:sys.boot_completed=1
     write /sys/class/power_supply/usb/otg_switch 1
 
     # Touchpanel
-    write /proc/touchpanel/oplus_tp_limit_enable 0
-    write /proc/touchpanel/oplus_tp_direction 1
+    write /proc/touchpanel/oppo_tp_limit_enable 0
+    write /proc/touchpanel/oppo_tp_direction 1
 
 # Disable AOSP RIL if MTK RIL is up
 on property:vendor.ril.mtk=1
