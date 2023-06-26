@@ -44,9 +44,6 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_EXCLUDES_AUDIOFX := true
 
 PRODUCT_PACKAGES += \
-    MtkInCallService
-
-PRODUCT_PACKAGES += \
     audio.a2dp.default
 
 PRODUCT_COPY_FILES += \
