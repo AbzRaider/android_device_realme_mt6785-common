@@ -15,6 +15,7 @@
 #
 
 COMMON_PATH := device/realme/mt6785-common
+DEVICE_PATH := device/realme/RMX2001
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
@@ -99,6 +100,14 @@ PRODUCT_PACKAGES += \
     NfcNci \
     SecureElement \
     Tag
+
+# Kernel
+PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
+
+TARGET_KERNEL_DIR := $(DEVICE_PATH)-kernel
+TARGET_PREBUILT_KERNEL := $(TARGET_KERNEL_DIR)/Image.gz
+
+PRODUCT_COPY_FILES += $(TARGET_PREBUILT_KERNEL):kernel
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
