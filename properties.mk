@@ -30,6 +30,13 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.sf.lcd_density=420
 
+
+# Audio
+ ro.camera.sound.forced=0 \
+ ro.audio.silent=0 \
+ ro.config.vc_call_vol_steps=9 \
+ ro.config.vc_call_vol_steps=15
+
 # IMS
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.dbg.volte_avail_ovr=1 \
