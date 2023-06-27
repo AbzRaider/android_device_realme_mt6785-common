@@ -91,10 +91,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     debug.sf.earlyGl.sf.duration=27600000 \
     debug.sf.earlyGl.app.duration=20000000 \
     ro.surface_flinger.running_without_sync_framework=true \
-    ro.vendor.mtk_hdr_video_support=1 \
-    ro.surface_flinger.set_idle_timer_ms=250 \
-    ro.surface_flinger.set_touch_timer_ms=280 \
-    ro.surface_flinger.use_content_detection_for_refresh_rate=true
+    ro.vendor.mtk_hdr_video_support=1 	    
+    ro.hardware.egl=mali \
+    ro.opengles.version=196610
 
 # ZRAM
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
