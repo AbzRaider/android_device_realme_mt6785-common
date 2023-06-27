@@ -81,19 +81,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.surface_flinger.has_HDR_display=true \
     ro.surface_flinger.has_wide_color_display=true \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
-    debug.mediatek.disp_decompress=1 \
-    debug.sf.latch_unsignaled=1 \
-    debug.sf.use_phase_offsets_as_durations=1 \
-    debug.sf.late.sf.duration=27600000 \
-    debug.sf.late.app.duration=20000000 \
-    debug.sf.early.sf.duration=27600000 \
-    debug.sf.early.app.duration=20000000 \
-    debug.sf.earlyGl.sf.duration=27600000 \
-    debug.sf.earlyGl.app.duration=20000000 \
     ro.surface_flinger.running_without_sync_framework=true \
-    ro.vendor.mtk_hdr_video_support=1 	    
-    ro.hardware.egl=mali \
-    ro.opengles.version=196610
+    ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
+    ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000 \
+    ro.surface_flinger.running_without_sync_framework=true
 
 # ZRAM
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
