@@ -37,6 +37,15 @@ PRODUCT_PRODUCT_PROPERTIES += \
  ro.config.vc_call_vol_steps=9 \
  ro.config.vc_call_vol_steps=15
 
+# DRM
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    drm.service.enabled=true \
+    ro.vendor.mtk_widevine_drm_l1_support=1
+
+# Netflix
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.netflix.bsp_rev=MTK6785-18787-1
+
 # IMS
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.dbg.volte_avail_ovr=1 \
